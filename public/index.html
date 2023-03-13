@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Secret Agency</title>
-	<style>
-    red {
-      color: #cc0000;
-    }
-		body {
-			background-color: #000000;
-			color: #ffffff;
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-			line-height: 1.5;
-      max-width: 80%;
-      margin: 0 auto;
-		}
-		header {
-			background-color: #1e1e1e;
-			padding: 20px;
-			text-align: center;
-		}
-		h1 {
-			font-size: 36px;
-			margin: 0 auto;
-			text-transform: uppercase;
-		}
-		section {
-			padding: 20px;
-			text-align: justify;
-		}
-		section h2 {
-			font-size: 24px;
-			margin-bottom: 10px;
-		}
-		section p {
-			margin-bottom: 20px;
-		}
-		footer {
-			background-color: #1e1e1e;
-			color: #ffffff;
-			padding: 10px;
-			text-align: center;
-		}
-	</style>
-</head>
-<body>
-	<header>
-		<h1>CODEEPS CONFIDENTIAL</h1>
-	</header>
-	<section>
-		<h2>About Codeeps</h2>
-		<p>We are Codeeps - a global secret organization that operates behind the scenes to maintain global stability and security. We have been around for centuries, working in secrecy to protect the world from threats both foreign and domestic.</p>
-    <p>Codeeps is responsible for preventing wars, thwarting terrorist attacks, and uncovering conspiracies that threaten global security. We work with governments and intelligence agencies around the world, sharing information and resources to keep the world safe.</p>
-	</section>
-  <section>
-  <code style="line-break: anywhere;color: red">0101010001101000011010010111001100100000011000100110100101101110011000010111001001111001001000000110001101101111011001000110010100100000011001000110111101100101011100110010000001101110011011110111010001101000011010010110111001100111</code>
-  <code>
-    <p>This is glorious. My next message is hidden in our server which is accessible only with the right authentication. 
-      I changed this website so it can access my message, but didn't finish it. It is available on <a target=_blank style="color:white;" href="https://github.com/descope-sample-apps/descope-escape-room">GitHub</a>.
-      It is up to you to make it work. </p>
-    <p>All i can say is that you'll need to add Descope Flows to it somehow, and everything you need is at <a style="color:white;" target=_blank  href="https://docs.descope.com">https://docs.descope.com</a></p>
-    <p>Good luck!</p>
+	<head>
+		<title>Secret Agency</title>
+		<style>
+			red {
+				color: #cc0000;
+			}
+			body {
+				background-color: #000000;
+				color: #ffffff;
+				font-family: Arial, sans-serif;
+				font-size: 16px;
+				line-height: 1.5;
+				max-width: 80%;
+				margin: 0 auto;
+			}
+			header {
+				background-color: #1e1e1e;
+				padding: 20px;
+				text-align: center;
+			}
+			h1 {
+				font-size: 36px;
+				margin: 0 auto;
+				text-transform: uppercase;
+			}
+			section {
+				padding: 20px;
+				text-align: justify;
+			}
+			section h2 {
+				font-size: 24px;
+				margin-bottom: 10px;
+			}
+			section p {
+				margin-bottom: 20px;
+			}
+			footer {
+				background-color: #1e1e1e;
+				color: #ffffff;
+				padding: 10px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>CODEEPS CONFIDENTIAL</h1>
+		</header>
+		<section>
+			<p>
+				We are Codeeps - a global secret organization that operates behind the scenes to maintain
+				global stability and security. We have been around for centuries, working in secrecy to
+				protect the world from threats both foreign and domestic.
+			</p>
+			<p>
+				Codeeps is responsible for preventing wars, thwarting terrorist attacks, and uncovering
+				conspiracies that threaten global security. We work with governments and intelligence
+				agencies around the world, sharing information and resources to keep the world safe.
+			</p>
+		</section>
+		<section>
+			<code style="line-break: anywhere; color: red">
+				VGhpcyBjb2RlIG1lYW5zIG5vdGhpbmcuIElmIHlvdSBuZWVkIGEgaGludCwgc2VuZCBhIHJlcXVlc3QgdG8gZXNjYXBlLXJvb21AZGVzY29wZS5jb20=
+			</code>
+			<code>
+				<p>
+					This is Glorious. My next message is hidden in our server which is accessible only with
+					the right authentication. I changed this website so it can access my message, but didn't
+					finish it. It is available on
+					<a
+						target="_blank"
+						style="color: white"
+						href="https://github.com/descope-sample-apps/descope-escape-room"
+						>GitHub</a
+					>. It is up to you to make it work.
+				</p>
+				<p>
+					All I can say is that you'll need to add Descope Flows to it somehow, and everything you
+					need to do so is at
+					<a style="color: white" target="_blank" href="https://docs.descope.com"
+						>https://docs.descope.com</a
+					>
+				</p>
+				<p>Good luck!</p>
+			</code>
+			<p>BEGIN MESSAGE</p>
+			<div style="background-color: darkblue" id="root"></div>
+			<p>END MESSAGE</p>
 
-  </code> 
-  <p>BEGIN MESSAGE</p>
-  <div style="background-color: darkblue;" id="root"></div>
-  <p>END MESSAGE</p>
+			<code style="line-break: anywhere; color: red">
+				VGhpcyBjb2RlIG1lYW5zIG5vdGhpbmcuIElmIHlvdSBuZWVkIGEgaGludCwgc2VuZCBhIHJlcXVlc3QgdG8gZXNjYXBlLXJvb21AZGVzY29wZS5jb20=
+			</code>
+		</section>
 
-  <code style="line-break: anywhere;color: red">0101010001101000011010010111001100100000011000100110100101101110011000010111001001111001001000000110001101101111011001000110010100100000011001000110111101100101011100110010000001101110011011110111010001101000011010010110111001100111</code>
-  </section>
-
-  
-	<footer>
-		<p>&copy; 2023 Descope Escape Room. All rights reserved.</p>
-	</footer>
-</body>
+		<footer>
+			<p>&copy; 2023 Descope Escape Room. All rights reserved.</p>
+		</footer>
+	</body>
 </html>
