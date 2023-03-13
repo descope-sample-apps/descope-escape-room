@@ -3,7 +3,7 @@ import { useState } from "react";
 function App() {
 	const [data, setData] = useState([]);
 
-	fetch("https://descope-escape-room-server.preview.descope.org/api/data", {
+	fetch("https://descope-escape-room.com/api/data", {
 		method: "POST",
 		headers: {
 			Accept: "application/json, text/plain, */*",
