@@ -75,6 +75,13 @@
             return;
         }
 
+        if (!jwt.token.playerEmail) {
+            response.status(200).json({
+                body: "Error ERR009"
+            });
+            return;
+        }
+
         response.status(200).json({
             body: process.env.REACT_APP_GLORIOUS_LOCATION
         });
