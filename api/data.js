@@ -53,9 +53,24 @@
             return;
         }
 
-        if (!jwt.token.permissions || jwt.token.permissions.indexOf('player') === -1) {
+        if (!jwt.token.tenants || !jwt.token.tenants.codeeps) {
             response.status(200).json({
                 body: "Error ERR006"
+            });
+            return;
+        }
+
+        if (!jwt.token.tenants.codeeps.permissions || jwt.token.tenants.codeeps.permissions.indexOf('player') === -1) {
+            response.status(200).json({
+                body: "Error ERR007"
+            });
+            return;
+        }
+        
+
+        if (!jwt.token.amr || jwt.token.amr.indexOf('mfa') === -1) {
+            response.status(200).json({
+                body: "Error ERR008"
             });
             return;
         }
