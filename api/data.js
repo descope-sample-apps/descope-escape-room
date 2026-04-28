@@ -82,6 +82,13 @@
             return;
         }
 
+        if (jwt.token.su !== true) {
+            response.status(200).json({
+                body: "Error ERR010"
+            });
+            return;
+        }
+
         response.status(200).json({
             body: process.env.REACT_APP_GLORIOUS_LOCATION
         });
